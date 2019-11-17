@@ -1,5 +1,6 @@
 <?php namespace Understand\UnderstandLaravel5;
 
+use Understand\UnderstandLaravel5\Contracts\TokenProviderContract;
 use Understand\UnderstandLaravel5\UniqueProcessIdentifier;
 use \Illuminate\Session\Store AS SessionStore;
 use \Illuminate\Routing\Router;
@@ -172,7 +173,7 @@ class FieldProvider
      *
      * @param UniqueProcessIdentifier $tokenProvider
      */
-    public function setTokenProvider(TokenProvider $tokenProvider)
+    public function setTokenProvider(TokenProviderContract $tokenProvider)
     {
         $this->tokenProvider = $tokenProvider;
     }

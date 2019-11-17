@@ -24,10 +24,12 @@ abstract class UnderstandServiceProvider extends ServiceProvider
     {
         $this->app->singleton('understand.tokenProvider', function ($app)
         {
-            return new $app['config']->get(
+            $tokenProvider = $app['config']->get(
                 'understand-laravel.token_provider',
                 \Understand\UnderstandLaravel5\TokenProvider::class
             );
+
+            return new $tokenProvider;
         });
     }
 
