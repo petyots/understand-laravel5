@@ -1,6 +1,8 @@
 <?php namespace Understand\UnderstandLaravel5;
 
-class TokenProvider
+use Understand\UnderstandLaravel5\Contracts\TokenProviderContract;
+
+class TokenProvider implements TokenProviderContract
 {
 
     /**

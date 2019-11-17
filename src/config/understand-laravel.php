@@ -21,6 +21,15 @@ return [
     'handler' => env('UNDERSTAND_HANDLER', 'sync'),
 
     /**
+     *  Specify your own Token Provider
+     *
+     * Token provider set the request_id field in understand.io
+     * Note that your custom token provider must implement
+     * Understand\UnderstandLaravel5\Contracts\TokenProviderContract
+     */
+    'token_provider' => \Understand\UnderstandLaravel5\TokenProvider::class,
+
+    /**
      * Project root folder
      */
     'project_root' => base_path() . DIRECTORY_SEPARATOR,

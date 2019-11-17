@@ -138,11 +138,16 @@ Laravel's (`>= 5.0, < 5.1`) and Lumen (`>= 5.1, < 5.6`) exception logger doesn't
  
 ### Advanced Configuration
 
-1. Publish configuration file
+Publish configuration file (Laravel)
 
 ```
 php artisan vendor:publish --provider="Understand\UnderstandLaravel5\UnderstandLaravel5ServiceProvider"
 ```
+
+Lumen
+1. Copy the config file from ```vendor/understand-laravel5/config/understand-laravel.php```
+2. Create ```config``` folder in your lumen project root if does not exist.
+3. Paste the file in the newly created folder.
 
 ### Requirements 
 ##### UTF-8
