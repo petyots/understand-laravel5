@@ -145,7 +145,7 @@ php artisan vendor:publish --provider="Understand\UnderstandLaravel5\UnderstandL
 ```
 
 Lumen
-1. Copy the config file from ```vendor/understand-laravel5/config/understand-laravel.php```
+1. Copy the config file from ```vendor/understand/understand-laravel5/src/config/understand-laravel.php```
 2. Create ```config``` folder in your lumen project root if does not exist.
 3. Paste the file in the newly created folder.
 
